@@ -24,6 +24,7 @@ We used the following datasets to gather information:
 
 - [CoinGecko API](https://www.coingecko.com/en/api/documentation) - it is an independently sourced collection of crypto data that includes metrics, such as live prices, trading volume, exchange volumes, trading pairs, historical data, contract address data, crypto categories, crypto derivatives, images and more.
 - [Twitter API](https://developer.twitter.com/en/docs/twitter-api) - it is a set of programmatic endpoints that can be used to understand or build the conversation on Twitter. This allows you to retrieve, engage with, or create a variety of different resources including Tweets, users, spaces, direct messages, etc.
+  - [Tweepy](https://docs.tweepy.org/en/stable/) - it is an open source Python library for accessing the Twitter API.
 
 ---
 
@@ -60,12 +61,14 @@ from pycoingecko import CoinGeckoAPI
 
 ---
 
-## Data Collection
+## Data Collection and Setup
 
-To make the API calls, make sure to have your Twitter API Keys loaded and set the CoinGecko variable as the following:
+To make the API calls, make sure to have your Twitter API Keys loaded, set the configurations for Tweepy, and set the CoinGecko variable as the following:
 
 ```python
 cg = CoinGeckoAPI()
 ```
 
-Next, set up dictionaries to capture all terms associated with each coin
+Next, set up dictionaries to capture all terms associated with each coin, Tweets to be collected, and timeframe of the Twitter data search.
+
+When collecting Tweets from Tweepy

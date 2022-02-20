@@ -16,7 +16,7 @@ This project leverages python 3.9 and Jupyter lab notebook was used to run all a
 
 We used the following datasets to gather information:
 
-- [CoinGecko API](https://www.coingecko.com/en/api/documentation) - it is an independently sourced collection of crypto data that includes metrics, such as live prices, trading volume, exchange volumes, trading pairs, historical data, contract address data, crypto categories, crypto derivatives, images and more.
+- [CoinGecko API](https://www.coingecko.com/en/api/documentation) - it is an independently-sourced collection of crypto data that includes metrics, such as live prices, trading volume, exchange volumes, trading pairs, historical data, contract address data, crypto categories, crypto derivatives, images and more.
 - [Twitter API](https://developer.twitter.com/en/docs/twitter-api) - it is a set of programmatic endpoints that can be used to understand or build the conversation on Twitter. This allows you to retrieve, engage with, or create a variety of different resources including Tweets, users, spaces, direct messages, etc.
   - [Tweepy](https://docs.tweepy.org/en/stable/) - it is an open source Python library for accessing the Twitter API.
 
@@ -102,7 +102,7 @@ Make sure the dataframe is set to proper datetime format.
 
 In order to analyze Twitter's effects on crypto prices, we combined both dataframes into one large dataframe based on where the timestamps intersected at the nearest hour for each coin.
 
-This allowed us to overly plots of both Twitter and CoinGecko activities grouped by each coin.
+This allowed us to overlay plots of both Twitter and CoinGecko activities grouped by each coin.
 
 For instance, Bitcoin's Twitter activity and price change is displayed below:
 
@@ -120,10 +120,10 @@ Here, you can also see Matic's price and volume changes according to Twitter act
 
 ![Volume change matic](Images/Volume_change_matic.png)
 
-In Matic's case, Twitter activity seems to correlate with its price and volume changes.
+In Matic's case, Twitter activity seems to correlate more with its price and volume changes, perhaps due to its smaller market cap.
 
 ---
 
 **Conclusion**
 
-From the graphs above, the results have shown that Twitter has varying degrees of price movement of cryptocurrency. Specifically, the bigger, more established coins, such as Bitcoin, are less impacted by Twitter activity compared to smaller, less traded altcoins, like Matic.
+From the graphs above, the results have shown that Twitter has varying degrees of price movement of cryptocurrency. Specifically, the bigger, more established coins, such as Bitcoin, are less impacted by Twitter activity compared to smaller, less-traded altcoins, like Matic.
